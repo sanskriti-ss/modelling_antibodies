@@ -507,6 +507,97 @@ def plot_dose_response(results: Dict[str, np.ndarray], title: str = "Bispecific 
     plt.show()
 
 
+def plot_figure_A1(results: Dict[str, np.ndarray],
+                   simulated_data: Optional[Dict[str, np.ndarray]] = None,
+                   savepath: Optional[str] = None):
+    """
+    Reproduce Figure A1 from the paper.
+
+    2×2 log-log panel plot:
+      Top-left:     Free Drug
+      Top-right:    Drug-CD3 Dimer
+      Bottom-left:  Drug-BCMA Dimer
+      Bottom-right: Trimer
+
+    Parameters
+    ----------
+    results : dict
+        Output from simulate_dose_response() — model predictions (line).
+    simulated_data : dict, optional
+        Same structure as results but for "observed" data points (dots).
+        If None, results is plotted as both dots and line.
+    savepath : str, optional
+        If given, save the figure to this path instead of showing.
+    """
+    # Panel configuration: (key in results dict, panel title)
+    panels = [
+        ('Cf',    'Free Drug'),
+        ('RECf',  'Drug-CD3 Dimer'),
+        ('RTCf',  'Drug-BCMA Dimer'),
+        ('RETCf', 'Trimer'),
+    ]
+
+    fig, axes = plt.subplots(2, 2, figsize=(9, 7.5),
+                              sharex=True, sharey=False)
+
+    CT = results['CT']
+
+    for ax, (key, panel_title) in zip(axes.flat, panels):
+        y_pred = results[key]
+
+        # ── Model prediction (solid line) ──
+        ax.loglog(CT, y_pred, '-', color='black', linewidth=1.2, zorder=2)
+
+        # ── Simulated / observed data (filled circles) ──
+        if simulated_data is not None:
+            y_obs = simulated_data[key]
+            ct_obs = simulated_data['CT']
+        else:
+            # Use a subset of the prediction as "observed" dots (every ~3rd point)
+            step = max(1, len(CT) // 25)
+            ct_obs = CT[::step]
+            y_obs = y_pred[::step]
+
+        ax.loglog(ct_obs, y_obs, 'o', color='black', markersize=5,
+                  markerfacecolor='black', markeredgecolor='black',
+                  zorder=3)
+
+        # ── Gray header strip (like ggplot facet label) ──
+        ax.set_title(panel_title, fontsize=11, fontweight='normal',
+                     bbox=dict(facecolor='#d9d9d9', edgecolor='#999999',
+                               boxstyle='square,pad=0.4'),
+                     pad=8)
+
+        # ── Axis formatting ──
+        ax.grid(False)
+        ax.tick_params(which='both', direction='in', top=True, right=True)
+
+        # Thin border
+        for spine in ax.spines.values():
+            spine.set_linewidth(0.6)
+            spine.set_color('#333333')
+
+    # ── Shared axis labels ──
+    fig.text(0.5, 0.02, 'Concentrations (nM)', ha='center', fontsize=11)
+    fig.text(0.02, 0.5, 'Concentrations (nM)', va='center',
+             rotation='vertical', fontsize=11)
+
+    # ── Title ──
+    fig.suptitle(
+        'Figure A1. Simulated vs model predicted free drug, drug-CD3 dimer,\n'
+        'drug-BCMA and trimer concentrations',
+        fontsize=11, y=0.99, va='top')
+
+    fig.subplots_adjust(left=0.1, right=0.97, top=0.88, bottom=0.1,
+                        hspace=0.35, wspace=0.35)
+
+    if savepath:
+        fig.savefig(savepath, dpi=200, bbox_inches='tight')
+        print(f"Figure saved to {savepath}")
+    else:
+        plt.show()
+
+
 if __name__ == "__main__":
     # Example usage matching the document parameters
     print("Bispecific Antibody Equilibrium Assessment")
@@ -565,17 +656,22 @@ if __name__ == "__main__":
     print(f"Consistent α values: {coop_analysis['alpha_consistent']}")
     print(f"No cooperativity: {coop_analysis['no_cooperativity']}")
     
-    # Example dose-response simulation
-    print(f"\nGenerating dose-response curve...")
-    CT_range = np.logspace(-2, 3, 50)  # 0.01 to 1000 nM
+    # ── Dose-response simulation matching Figure A1 ──
+    # Figure A1 x-axis spans ~1e-4 to ~1e4 nM
+    print(f"\nGenerating dose-response curve (Figure A1 range)...")
+    CT_range = np.logspace(-4, 4, 200)
     dose_response = simulate_dose_response(CT_range, RT, RE, KE, KT, alpha)
-    
+
     # Show results at a few concentrations
-    test_indices = [10, 25, 40]
-    print(f"\nSample concentrations:")
-    for i in test_indices:
-        ct = dose_response['CT'][i]
-        retcf = dose_response['RETCf'][i]
-        print(f"CT = {ct:.2f} nM → Ternary complex = {retcf:.4f} nM")
-    
-    print(f"\nTo plot results, run: plot_dose_response(dose_response)")
+    for ct_test in [0.001, 0.1, 10.0, 1000.0]:
+        idx = np.argmin(np.abs(CT_range - ct_test))
+        ct = dose_response['CT'][idx]
+        print(f"  CT = {ct:.4f} nM  →  Free={dose_response['Cf'][idx]:.2e}  "
+              f"CD3-dimer={dose_response['RECf'][idx]:.2e}  "
+              f"BCMA-dimer={dose_response['RTCf'][idx]:.2e}  "
+              f"Trimer={dose_response['RETCf'][idx]:.2e}")
+
+    # ── Generate Figure A1 ──
+    print(f"\nPlotting Figure A1...")
+    savepath = "/Users/sanskriti/Documents/GitHub/modelling_antibodies/ng_2024_paper/figure_A1.png"
+    plot_figure_A1(dose_response, savepath=savepath)
