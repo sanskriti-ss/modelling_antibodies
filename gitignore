@@ -1,0 +1,7 @@
+# Simulink cache and code generation
+slprj/
+*.slxc
+*.asv
+
+# MATLAB autosaves
+*.m~
