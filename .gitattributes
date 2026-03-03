@@ -1,0 +1,3 @@
+*.slx binary
+*.mat binary
+*.mex* binary
