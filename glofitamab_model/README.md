@@ -21,7 +21,8 @@ Glofitamab bridges CD20+ B cells (tumor) to CD3+ T cells (effector) via a ternar
 | `glofitamab_crs_model.py` | 3-layer CRS model (activation → cytokines → grading) |
 | `glofitamab_fatigue_model.py` | Indirect response fatigue model |
 | `dose_optimization_analysis.py` | Systematic dose optimization sweeps |
-| `generate_all_plots.py` | Generate all 9 model characterization plots |
+| `glofitamab_thermoregulation.py` | Hypothalamic temperature regulation / fever model |
+| `generate_all_plots.py` | Generate all model characterization plots (1–13) |
 | `plot_optimization_results.py` | Generate 5 dose optimization figures |
 | `generate_block_diagram.py` | Generate architecture and mechanism diagrams |
 
@@ -102,6 +103,35 @@ Glofitamab bridges CD20+ B cells (tumor) to CD3+ T cells (effector) via a ternar
 | Grade 2 threshold | 2.0 | score units | Moderate fatigue cutoff | Tuned to FDA label (14% of cases) |
 | Grade 3 threshold | 5.0 | score units | Severe fatigue cutoff | Tuned to FDA label (1.4% of cases) |
 
+### Thermoregulation Model Parameters
+
+The thermoregulation module models fever as a downstream effect of CRS-driven IL-6 elevation,
+via the hypothalamic setpoint mechanism.
+
+**Signal chain:** Glofitamab (PK) → RCAB → T-cell activation → IL-6 (CRS model) → hypothalamic setpoint shift → body temperature
+
+**Hypothalamic setpoint** (algebraic):
+
+    T_hypo(t) = T_base + α · ln([IL6](t) / [IL6]_base)
+
+**Body temperature ODE:**
+
+    dT_body/dt = k3 · (T_hypo - T_body) - kd3 · (T_body - T_base)
+
+Note: We use T_base (not T_room) in the dissipation term — this collapses Stolwijk's multi-compartment
+model into a single compartment where metabolic heat production maintains the 37°C baseline implicitly.
+
+| Parameter | Value | Unit | Description | Source |
+|-----------|-------|------|-------------|--------|
+| T_base | 37.0 | °C | Normal core body temperature | Standard physiology |
+| T_room | 22.0 | °C | Ambient temperature (Stolwijk full model) | Stolwijk 1971 |
+| α | 0.35 | °C/ln-unit | IL-6 sensitivity of hypothalamic setpoint | Calibrated to Gritti et al. 2024 (median CRS fever ~38.3°C) |
+| k3 | 4.0 | 1/day | Active thermoregulation rate (τ ~ 6h) | Stolwijk 1971 (NASA CR-1855) |
+| kd3 | 0.5 | 1/day | Active heat dissipation feedback | Estimated |
+| Grade 1 | ≥ 38.0 | °C | Fever threshold | Lee et al. 2019 (ASTCT) |
+| Grade 2 | ≥ 38.5 | °C | Moderate fever (proxy) | Clinical convention |
+| Grade 3 | ≥ 40.0 | °C | High fever | Clinical convention |
+
 ## Clinical Validation Targets
 
 | Endpoint | Clinical Data | Model Output | Source |
@@ -112,6 +142,8 @@ Glofitamab bridges CD20+ B cells (tumor) to CD3+ T cells (effector) via a ternar
 | CRS at dose 1 | 56% | ~38% | Dickinson et al., JCO 2021 |
 | CRS attenuation | 56% → 2.8% | 38% → 3% | Dickinson et al., JCO 2021 |
 | Fatigue grade distribution | 85/14/1.4% (G1/G2/G3) | >95% Grade 1 | Glofitamab FDA label |
+| Peak fever (2.5 mg) | 38.0–38.5 °C (median) | 38.8 °C | Dickinson et al. 2021; Gritti et al. 2024 |
+| Fever onset | ~14 hours | ~14.7 hours | Glofitamab FDA label |
 
 ## Key Findings
 
@@ -147,6 +179,9 @@ The key pharmacological difference: in Ray et al., RCAB mediates receptor blocka
 6. Haber L, Olson K, Kelly MP, et al. Generation of T-cell-redirecting bispecific antibodies with differentiated profiles of cytokine release. *Sci Rep*. 2021;11:14397.
 7. Lee DW, Santomasso BD, Locke FL, et al. ASTCT consensus grading for cytokine release syndrome. *Biol Blood Marrow Transplant*. 2019;25(4):625-638.
 8. Glofitamab (Columvi) FDA prescribing information. Genentech, Inc. 2023.
+9. Stolwijk JAJ. A mathematical model of physiological temperature regulation in man. NASA CR-1855. 1971.
+10. Lefèvre N, et al. Mechanistic PKPD modeling of cytokine release associated with CD3 T-cell engager therapies. 2024. PMC11782561.
+11. Gritti A, et al. Predictive model for the risk of cytokine release syndrome with glofitamab. *Blood Advances*. 2024;8(14):3615-3618.
 
 ## Running the Model
 
@@ -165,5 +200,6 @@ python -m glofitamab_model.glofitamab_equilibrium
 python -m glofitamab_model.glofitamab_pk_tmdd
 python -m glofitamab_model.glofitamab_crs_model
 python -m glofitamab_model.glofitamab_fatigue_model
+python -m glofitamab_model.glofitamab_thermoregulation
 python -m glofitamab_model.dose_optimization_analysis
 ```
