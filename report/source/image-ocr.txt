@@ -1,0 +1,827 @@
+IMAGE 00
+Ternary complex
+
+formation
+
+Dose
+——
+
+Blood/
+Plasma
+
+cL
+
+arc k
+Kyroa (1 + Ge + are ) clear
+
+------- > —
+
+~<_ Tumor cell r
+~<. death
+Sy ee e e
+
+fee
+eee ee Tumor cells
+.
+
+eee
+ky
+
+————-
+
+«—__.
+ky
+
+
+IMAGE 01
+anti-IL-6R emtHIL-GR anti-IL-6R ‘anti-IL-8R
+
+Rf Nf KM
+
+Tociizumab 1042 ast
+
+aN
+
+Kener
+i BS1-IL-6R
+otter *
++ IL-8R
+IL-8R
+Kensie
+BSI-IL-8R +IL-6R 7 IL-6R-BS1-IL-8R
+<—
+
+eee
+
+
+IMAGE 02
+The equations take the form:
+
+{Ry - Ab
+[ 7 ] Kon,r, [Ri] [Ab] + Kogr,. (Ri - Ab + Ro]
+—Kon,Ry- (Re][Ri + Ab] — Kogy.n, [Ri * Ab]
+()
+[Ry « Ab- R:
+aR Ab “Rl _ Kon Ry. [Ri[Ro “ AB) + Kon,ey(Ro[Ry + Ab]
+
+—kog py. (Ri «Ab - Ro] — Kog.py. [Ri + Ab - Ro]
+(2)
+
+
+IMAGE 03
+afAb] _
+dt
+
+afagi] _
+dt
+
+d[Ag2] _
+dt
+
+[Bagi]
+dt
+
+[Baga]
+dt
+
+a[Bavi] _
+dt
+
+= kon” [Ag2][Ab] — ko" [Bag
+
+—k52* [Ag1 [Ab] — ko8? [Ag2][Ab]
+es aa
++ eoeF [Bagi] + kor [Baga
+
+[Ag1][Ab] + ko?" (Bag:
+[Ag1]
+
+— kon" [Ag terse 7 gio] (02!
++ koe [Bani]
+
+Kast
+
+Kg Ag2
+
+[Ag2][Ab] + kor [Bagz]
+
+[Ag2]
+yg?
+~ [49 eft] Tagdo] [Ag2o] Bagi]
++ Kage [Bavi]
+= kd" [Ag [4b] — ke" [Bags
+[Ag2]
+[Ag2o]
+
+Ag?
+
+Ager] Fao Bagi]
+
++ KA 2? [Bapil
+
+[Ag1]
+~ kon [Ag ler gio] Baga]
++ kop; [Bao]
+
+kon [Bagal[Ag ters]
+
+Ke?
+
+[Ag1]
+
+[Ag1o] [aga]
+[BroillA92err] a9]
+
+Agi ale 2
+“(oh Kae?) [Bavil
+
+
+
+IMAGE 04
+Ab + Ag1 —— Bagi
+
+Ab + Ag2 —— Baga
+
+Bagi + Ag2"F o Bavi
+
+Bavi
+
+Bago + Ag’""F
+
+
+IMAGE 05
+B in-cis receptor agonism
+
+c s .
+! In-cis receptor antagonism
+A
+In-trans cell binding
+x
+2 Signaling
+=
+
+No signaling
+
+F D Piggybacking
+Co-factor mimetics
+
+= Receptor
+facilitating
+translocation
+E LL
+
+Localizing effects . Al
+Barrier
+
+optim,
+
+positioning of
+substrate
+
+FIGURE 1
+Obligate mechanisms of action for bsAbs. (A) /In-trans cell bridging established a physical link between different cells through the bsAb. This
+
+mechanism is especially relevant for T cell redirecting bsAbs where the physical connection helps target the cytotoxicity of the activated T cells. (B) In-cis
+bridging of receptors causes agonistic crosslinking and associated activation of receptor signaling. (C) In-cis antagonism blocks receptor association thus
+preventing signaling through the receptor complex. (D) Piggybacking bsAbs use one specificity for targeting a receptor that facilitates translocation
+across a barrier to an otherwise inaccessible compartment where the second specificity exerts its functionality. The lightning bolt indicates an activity
+mediated by binding of the antibody. (E) BsAbs can exert localization effects. An example is agonistic bsAbs that also contain a tumor-targeted specificity,
+which limits on-target, off-tumor effects by restricting the agonistic mechanism to sites where the tumor marker is present. (F) BsAbs acting as a co-
+factor mimetic by accurately positioning of enzyme and substrate.
+
+Activation in healthy Tumor binding promotes f
+tissue yields on-target localized activation in
+off-turmor effects tumor environment
+
+
+
+IMAGE 06
+i. Fragment-based
+
+Tandem scFv, BiTE
+(41) DART (1+1) sdAb fusions sdAb multimerization
+Nabe sdAb fusions oy
+(+1)
+coon. y Multimerization
+coon§, HSA
+
+2x seFv linked in a
+
+single polypeptide 7
+
+domain >
+
+Nie Single-domain antibodies fused
+TandAb (2+2) through flexible linkers. Connected
+VH, Vix VHp VLy 2x Fv domains linked on to HSA for inereased half life
+
+DD DD two polypeptide chains. Valencies can be tailored through
+
+disulfide bridge
+Via VHzp VLg —-VHq ‘SdAbs connected through
+
+‘multimerization domain to form
+bispecific construct,
+
+2x Fv domains linked on
+two polypeptide chains
+
+Symmetric Fc-containing
+
+SdAb-IgG
+ScFv-I
+cl ihe ae (242) Tandem scFy-Fe DVD-Ig Tetra-VH IgG
+
+MVR We
+
+Fusion of scFv to IgG scaffold, Fusion of sdAb to IgG scaffold. ‘Two different scFvs linked
+
+Fusing exogenous Replacing VH and VL.
+Fusion can be done at all termini Fusion can be done atall termini through a Fe region can -
+sali Giana ewe aecamee eae Fy domain N-terminally with independent sdbs
+of both HC and LC both HC and LC be expressed fr ar
+
+single polypeptide chain
+
+Asymmetric Fc-containing
+
+Hetero HC, Hetero HC,
+
+hetero LC IgG common LC IgG ee an (Fab)3 colnet nie
+
+(41) (+1) (241) 4 (141)
+Lal Lal
+
+EF FS
+
+Assembly of two Assembly of two Replacing one of the Fab Appending Fab domain N- Replacing both Fab domains
+unique HC and unique HC and a arms with scFv forms terminally onto one of the with scF¥ limits the risk of
+two unique LC common LC prevents bsAb with reduced risk of ative Fab domains. HC:LC HCELC misparing, Could also
+
+HC:LC mispairing HC:LC mispairing stecring is needed to ensure be another antibody fragments
+asymmetric geometry such as single-domain antibody
+
+FIGURE 2
+
+Schematic overview of the most common bsAb formats categorized according to molecular configuration. (A) Fragment-based bsAbs are formed
+
+by combining small antigen-binding fragments without a Fc domain. The building blocks are typically scFv fragments or sdAbs. (B) Symmetric Fc-
+containing bsAbs are expressed from one to two polypeptide chains often by fusing additional antigen-binding fragments onto an IgG scaffold. (C)
+‘Asymmetric Fe-containing bsAbs assembled from two to four polypeptide chains. Asymmetric bsAbs require measures to avoid chain mispairing.
+
+The small "knob" and “hole” in the schematics are used to generically illustrate places where a chain steering technology is needed to ensure HC:HC
+heterodimerization and/or proper HC:LC pairing.
+
+
+IMAGE 07
+
+
+IMAGE 08
+dF IL6
+= keiml(H) — (kro tk L kepB)F
+dE _ gp l(H) — (kro +k + krwM \L
+dt —= WL, in- L,0 D,IL6 K, + IL6 DM:
+dB IL6
+= dpB
+dt “"Kp+IL6 2
+dM IL6
+a“ k,, +1~e | OMM
+dH IL
+= 6 dyH
+
+dt" Ky +16
+
+
+IMAGE 09
+
+
+IMAGE 10
+d| Ry - Ab
+a = Kon,Ry [Ry }[A}] + Rog f,.R3 [Ry - Ab- Ry] _ Kon, RS [Ro] [Ry : Ab _— kof f.Ry [Ri . Ab
+
+
+IMAGE 11
+d|Rz- Ab
+ee = Kon,Ro [Ro] [AD] + Rog f.Ri [Ry - Ab- Ry] _ Kon,Ri [Ri][Re . AD _— Kop f,Ro [Re . AD]
+
+
+IMAGE 12
+d|R,-Ab- R
+ee = kon Re [Ry ][Re : Ab] + Kon Rs [Ro] [Ry . AD| - (Kop p.Re + kop p.rs)[R1 - Ab- Ro]
+
+
+IMAGE 13
+d|Rp- Ab
+ane 0 = kon 6(R)[AB] — kop pp[Re Ab) — kon.e-[Rell Re « Ab] + kopp.n-[Rp - AD- Ra] — kon-ty,[Rrl/Re « Ab] + koppetay,l Re Ab» Re
+
+
+IMAGE 14
+d|Rp- Ab: Rh
+fen Bel = kon.o+[Rel| Re» AB) — kop pe-[Re «Ab» Rp] — ontynlRrl[Re « A+ Ra] + op fetuy, [Re Ab- Re Re
+
+
+IMAGE 15
+d|\ Rp + Ab
+ET = kone |Rer\[AB) — Kory -r(Rer - AD] ~ kon Pye] Pr « Ab) + kors.Bayal Re © Ab~ Rr
+
+
+IMAGE 16
+d| Rp: Ab- Re
+Ae 0 rl = Kon Deyn (Rr) [Re Ab] + Bon, Beyn Ra][Rr + Ab] — (Kor ftom + Kot f.Bayn) RB + Ab Rr| — Kon,p*[Rel[Re - Ab- Rr| + Kor s.p*[Re - Ab+ Rp + Rr
+
+
+IMAGE 17
+d|Rp-Ab- Rg- Rr|
+on
+
+Kon Tan Rr |[Re - Ab- Re] + Kone [Re|[Re > Ab- Rr] — (kor ftom + Kor t.e*)|Re > Ab- Re Rr
+
+
+IMAGE 18
+Dose schedule + biological parameters
+Drug properties - CD20 / CD3 levels
+
+Binding equilibrium initial state Drug exposure + binding
+
+Receptor occupancy PK / TMDD = ternary complex
+
+Ternary complex
+
+Immune response
+
+T-cell activation — cytokines
+
+Efficacy proxy CRS risk Fatigue
+
+Ternary-complex AUC Predicted grade Peak score
+
+Compare dose schedules: balance predicted efficacy and toxicity
+
+
+IMAGE 19
+Distribution
+Tissue drug Free glofitamab
+
+Peripheral compartment Central compartment
+
+Elimination CD20-bound drug CD3-bound drug
+
+Drug clearance
+B-cell receptor T-cell receptor
+
+Recruit CD3 Recruit CD20
+
+Ternary complex T-cell activation
+
+CD20-glofitamab-CD3 bridge Immune response
+
+CRS risk Fatigue Cytokines
+
+Peak-complex predictor Immune-burden response IL-6 - TNF-a
+
+
+IMAGE 20
+Tumor cells \J]
+
+—> —
+Dose | Coie
+
+T Activation
+Kinnaive |
+
+' signal
+fKact
+
+/ Dy TAaCtectay(1-4)
+
+\ : Transit compartments
+Tnaive
+% a TaCtaelays
+~*~
+Kapop
+
+Cytokine
+
+release
+
+signal
+
+° e
+
+Kineyt ee ee e® Kdeg.yt
+e%e - *.,
+e at e
+
+
+IMAGE 21
+Glofitamab Troom — Thody
+
+P
+Input \y - v Z
+fkcyt
+k1 . Cytokine) _ — \{ Hypo
+miood cy, = ee)
+|
+
+kat [ka2 ykds
+
+
+IMAGE 22
+AT naive
+
+ky (ka t fi act) Lnaive
+
+dt
+a{IL6
+a ko(1 + fie) — Kaz {IL6]
+TL6 io
+Thypo(t) = Thase + a ln (is. * )
+dT yoay
+
+dt = kg (Thypo _— Thoay) _ kag (Thoay _ Troom)
+
+
+IMAGE 23
+Avidity-driven binding of bispecific antibodies
+
+Figure 3
+
+44
+
+100:1
+
+C : ___EGFRMET
+
+} |
+308;
+-
+“o2
+0 0
+1" 10%" 10 = 10 t0* = 107 10% 1 10" 10° = 10% = t0* = 107 10*
+Antibody concentration (M) Antibody concentration (M)
+
+
+IMAGE 24
+Normalized signal / fraction
+
+1.0
+
+08
+
+0.6
+
+0.4
+
+0.2
+
+0.0
+
+Bivalent bispecific binding model (Paper Fig. 3-style reproduction)
+
+1:1 EGFR:MET
+
+10:1 EGFR:MET
+
+100:1 EGFR:MET
+
+— Ab bound (norm)
+—— Unbound EGFR
+— Unbound MET
+
+zo" «lo ‘107%% 1079 10-8 10-7 107%
+Antibody concentration (M)
+
+10-22
+
+19-1
+
+10° 10"? 10-®
+Antibody concentration (M)
+
+107
+
+10-6
+
+10-2
+
+10-1
+
+10° 10°? 10-8
+Antibody concentration (M)
+
+10-7
+
+
+
+IMAGE 25
+Complex Concentration
+
+——-BS1-IL-6R
+——BS1-IL-8R
+—— IL-6R-BS1-IL-8R
+
+() 0.4 0.8 1.2 1.6 2 2.4 2.8 3.2 3.6 4
+Time (hours)
+
+
+IMAGE 26
+Sy cole 2 1)
+
+‘er w in oS
+
+o
+‘tia BS! dose
+
+
+
+IMAGE 27
+50180 receptor conden: total bound vs temary complex
+
+[SFr nse
+
+rau eu
+
+
+
+IMAGE 28
+Complex Concentration
+
+x10* Simulated Binding Dynamics and Synapse Formation of
+
+Glofitimab
+T T
+
+11-
+
+10+
+
+0 0.4 0.8 1.2 1.6 2 24
+Time (hours)
+
+Monovalent B-Cell (CD20-Ab)
+
+Bivalent B-Cell Anchor (CD20-Ab-CD20)
+Monovalent T-Cell (CD3-Ab)
+
+Monovalent Synapse (CD20-Ab-CD3)
+
+Fully Locked Synapse (CD20-Ab-CD20-CD3)
+
+2.8 3.2 3.6 4
+
+
+
+IMAGE 29
+CRS Probability (%)
+
+Lowering the First Dose Is the Biggest Lever to Reduce CRS
+(all protocols: step-up to 30mg Q3W x12, only first dose varies)
+
+100 4
+
+80
+
+604
+
+40 4
+
+207
+
+!
+!
+Low crs ! HIGH CRS L 100
+ZONE I 4
+I 7
+i ’
+1 4
+1 7
+l r 98
+i 4
+| y
+!
+Py
+1 ey p96
+!
+!
+uo“ =@= Any-grade CRS t 94
+-
+I Lye —lF Grade >=2 CRS
+nye err Lalas -@ Grade >=3 CRS
+wenn he = H Current °
+
+(2.5 mg) he Efficacy (RCAB AUC) | 99
+!
+
+Proposed H
+
+(1.0 mg) 1
+| t 90
+!
+!
+i
+
+f 88
+{
+{
+!
+! F 86
+10° 10?
+
+First Dose (mg)
+
+Efficacy Retained (% of max RCAB AUC)
+
+
+IMAGE 30
+RCAB (nM)
+
+IL-6 (pg/mL)
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+500
+
+400
+
+300
+
+100
+
+Head-to-Head: Current (2.5 mg) vs Optimized (1.0 mg) First Dose
+Same obinutuzumab pretreatment, same maintenance protocol
+
+A. Ternary Complex (CRS Trigger)
+
+B. T-cell Activation
+
+1.0
+— Current (2.5 mg) — Current (2.5 mg)
+—— Optimized (1.0 mg) —— Optimized (1.0 mg)
+0.84
+rm
+S064
+<
+2
+8
+Peak: 0.32 nM 5
+24 of current) < 0.44
+a
+o
+fas
+0.24
+0.04
+25 50 7S 100 125 150 175 0 25 50 75 100 125 150 17
+Time (hours) Time (hours)
+C. IL-6 Cytokine Release 28% D. CRS Ris : Current vs Optimized
+19% 1 @@m Current (2.5 mg)
+% lower ‘
+peak IL-6 c7#MCV[P—~—{m—x@©— 25 | | Optimized (1.0 mg)
+204
+8
+—— Current (2.5 mg) >
+— Optimized (1.0 mg) 5 154
+Baseline 8
+2
+* 104
+5%
+54
+T 1 1 T 1 1 0 a,
+25 50 15 100 125 150 175 Any CRS. Grade 1 Grade >=2 Grade >=3
+
+Time (hours)
+
+
+IMAGE 31
+Step-Up Ramp Design: Slower Ramps Dramatically Cut Severe CRS
+
+With Negligible Efficacy Loss
+A. Any-Grade CRS by Ramp Strategy B. Severe CRS (Grade >=2) by Ramp C. Efficacy Retained
+87.3%
+104
+80
+102
+Ss g 100.0%
+2 * 100
+= 60
+g 5 Fa
+> 3 g
+5 é 5 98
+3 2 E
+3 & 3S
+& S40 2
+2 ! = 6
+& ° 2
+3 &
+3 S
+G E94
+20
+15.2% 15.2%
+92
+0 90
+
+Aggressive Current. Gentler__——_Slower__—_Uitra:siow
+1030 -2.5-+10930 2595-010430142 5-*10-+BB41-+2.5-*1030
+
+Aggressive Current Gentler__—_ Slower __ultra.slow
+
+Fat Agaressive_ Current Gentler_— Slower __Uitra-slow
+10930 2.541030 2.595-01030142 5-*10-+B+1-+2.5-+1030
+
+30mg O30 2.501030 2.5-+5-7109301-42.5-°10--BG-+1-92. 510430
+
+
+
+IMAGE 32
+Change in peak fatigue score (%)
+
+Large dosing changes produce little change in predicted fatigue
+
+Model sensitivity relative to 30 mg every 21 days
+
+A Fourfold dose range B Threefold interval range
+
+Peak score: 1.135-1.143 Peak score: 1.126-1.143
+
+2-—— T T T T T T T T T T
+
+10 15 20 25 30 40 14 21 28 35 42
+
+Maintenance dose (mg) Dosing interval (days)
+
+Fatigue production / maximum
+
+C Why the model can flatten
+
+Response = burden / (burden + EC50)
+1.0 Panna nnn nnn nnn nnn nnn nnn nnn nano See --
+
+smaller incremental
+response
+
+10? 10? 10
+
+Immune burden / EC50
+
+
+IMAGE 33
+Body Temperature (C)
+
+39.0
+
+38.5
+
+38.0
+
+37.5
+
+37.0
+
+36.5
+
+Temperature vs Dose Level
+
+Dose-Dependent Hypothalamic Temperature Dysregulation
+
+(Lefevre et al. 2024 / Stolwijk 1971 Model)
+
+Peak Fever by Dose
+
+Fever Duration by Dose
+
+Fever tosh 1osh pe 110h
+39.0 38.8¢ sac 100 zoth
+ae7c 38.8C
+go 385 B 80
+ra 3
+5 £
+5 38.0 5 60
+E i
+icy a
+% 375 B 40
+é &
+— 10mg
+— 25mg 37.0 20
+10.0 mg
+30.0 mg
+36.5 °
+20 40 60 80 100 1.0 mg 2.5mg 10.0 mg 30.0 mg 1.0 mg 2.5 mg 10.0 mg 30.0 mg
+
+Time (hours)
+
+

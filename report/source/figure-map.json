@@ -1,0 +1,187 @@
+[
+  {
+    "image": 0,
+    "report_asset": "original_00.png",
+    "replacement": false
+  },
+  {
+    "image": 1,
+    "report_asset": "original_01.png",
+    "replacement": false
+  },
+  {
+    "image": 2,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native LaTeX equations eq:binary-binding and eq:ternary-binding; original_02.png retained as source"
+  },
+  {
+    "image": 3,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: avidity-antibody, avidity-ag1, avidity-ag2, avidity-bag1, avidity-bag2, avidity-double"
+  },
+  {
+    "image": 4,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native LaTeX align* reaction scheme in report.tex; original_04.png retained as source"
+  },
+  {
+    "image": 5,
+    "report_asset": "original_05.png",
+    "replacement": false
+  },
+  {
+    "image": 6,
+    "report_asset": "original_06.png",
+    "replacement": false
+  },
+  {
+    "image": 7,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: body-weight"
+  },
+  {
+    "image": 8,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: fat-mass, lean-mass, browning, muscle-catabolism, hypothalamic-drive"
+  },
+  {
+    "image": 9,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: nutritional-drive"
+  },
+  {
+    "image": 10,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: bs1-r1"
+  },
+  {
+    "image": 11,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: bs1-r2"
+  },
+  {
+    "image": 12,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: bs1-ternary"
+  },
+  {
+    "image": 13,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: glofit-binary-b"
+  },
+  {
+    "image": 14,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: glofit-anchor"
+  },
+  {
+    "image": 15,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: glofit-binary-t"
+  },
+  {
+    "image": 16,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: glofit-synapse"
+  },
+  {
+    "image": 17,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: glofit-locked"
+  },
+  {
+    "image": 18,
+    "report_asset": "diagram_architecture.png",
+    "replacement": true
+  },
+  {
+    "image": 19,
+    "report_asset": "glofitamab_mechanism_of_action.png",
+    "replacement": true
+  },
+  {
+    "image": 20,
+    "report_asset": "original_20.png",
+    "replacement": false
+  },
+  {
+    "image": 21,
+    "report_asset": "original_21.png",
+    "replacement": false
+  },
+  {
+    "image": 22,
+    "report_asset": null,
+    "replacement": true,
+    "rendering": "Native numbered LaTeX: thermo-naive, thermo-il6, thermo-setpoint, thermo-body"
+  },
+  {
+    "image": 23,
+    "report_asset": "original_23.png",
+    "replacement": false
+  },
+  {
+    "image": 24,
+    "report_asset": "original_24.png",
+    "replacement": false
+  },
+  {
+    "image": 25,
+    "report_asset": "original_25.png",
+    "replacement": false
+  },
+  {
+    "image": 26,
+    "report_asset": "original_26.png",
+    "replacement": false
+  },
+  {
+    "image": 27,
+    "report_asset": "original_27.png",
+    "replacement": false
+  },
+  {
+    "image": 28,
+    "report_asset": "original_28.png",
+    "replacement": false
+  },
+  {
+    "image": 29,
+    "report_asset": "fig1_first_dose_sweet_spot.png",
+    "replacement": true
+  },
+  {
+    "image": 30,
+    "report_asset": "fig2_current_vs_optimized.png",
+    "replacement": true
+  },
+  {
+    "image": 31,
+    "report_asset": "fig3_ramp_comparison.png",
+    "replacement": true
+  },
+  {
+    "image": 32,
+    "report_asset": "fig4_fatigue_insensitivity.png",
+    "replacement": true
+  },
+  {
+    "image": 33,
+    "report_asset": "plot10_dose_temperature.png",
+    "replacement": true
+  }
+]

@@ -1,0 +1,8 @@
+PASS: 147/147 article prose, headings and caption blocks found in compiled PDF text after Unicode/whitespace normalization and page-number removal.
+PASS: 34/34 source images accounted for in report figure mapping.
+PASS: 7 updated figures used in place of their original counterparts.
+PASS: 4 plain-text equations typeset; 12 dedicated equation images retained (07–17 and 22), plus equations embedded in other original illustrations.
+PASS: XeLaTeX compilation, no missing-character, overfull-box or LaTeX warnings in final log.
+Equation-image OCR is a best-effort aid, not a replacement for preserved original images.
+
+Editorial revision: author names and collaboration credit removed; Overall summary renamed Abstract; informal Main takeaways paragraph removed. Verified in rebuilt PDF. Original extraction and initial text audit retain the source article for provenance.
