@@ -1,0 +1,48 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4900278/",
+  "published_inputs": {
+    "kon_M_inverse_s": 100000.0,
+    "koff_s_inverse": 0.0001,
+    "egfr_per_cell": 1000000.0,
+    "met_per_cell": [
+      1000000.0,
+      100000.0,
+      10000.0
+    ],
+    "cell_radius_m": 8e-06,
+    "igg_reach_m": 1.25e-08
+  },
+  "assumptions": {
+    "cell_density_per_mL": 602214.076,
+    "antibody_pool": "closed; depletion included",
+    "endpoint": "stationary state; ODE relaxation until derivative <1e-11 nM/s",
+    "antibody_normalization": "bound antibody divided by bound antibody at highest sampled dose"
+  },
+  "validation": [
+    {
+      "ratio": 1,
+      "max_ode_vs_equilibrium_nM": 5.891271747471882e-08,
+      "max_conservation_error_nM": 2.0463630789890885e-12,
+      "max_relaxation_seconds": 10000000.0,
+      "egfr_effective_nM": 247765.31319180236,
+      "met_effective_nM": 247765.31319180236
+    },
+    {
+      "ratio": 10,
+      "max_ode_vs_equilibrium_nM": 8.433634678915932e-08,
+      "max_conservation_error_nM": 2.3874235921539366e-12,
+      "max_relaxation_seconds": 1000000.0,
+      "egfr_effective_nM": 247765.31319180236,
+      "met_effective_nM": 24776.531319180238
+    },
+    {
+      "ratio": 100,
+      "max_ode_vs_equilibrium_nM": 9.182267249678693e-08,
+      "max_conservation_error_nM": 1.8189894035458565e-12,
+      "max_relaxation_seconds": 1000000.0,
+      "egfr_effective_nM": 247765.31319180236,
+      "met_effective_nM": 2477.653131918024
+    }
+  ],
+  "status": "Local reimplementation; original scripts and complete original simulation settings unavailable."
+}

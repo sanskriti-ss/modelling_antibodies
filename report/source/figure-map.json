@@ -131,13 +131,15 @@
   },
   {
     "image": 23,
-    "report_asset": "original_23.png",
-    "replacement": false
+    "report_asset": "avidity_equilibrium.png",
+    "replacement": true,
+    "rendering": "Local avidity reconstruction; assumptions and calculations in avidity_reconstruction/"
   },
   {
     "image": 24,
-    "report_asset": "original_24.png",
-    "replacement": false
+    "report_asset": "avidity_ode.png",
+    "replacement": true,
+    "rendering": "Local avidity reconstruction; assumptions and calculations in avidity_reconstruction/"
   },
   {
     "image": 25,
@@ -146,13 +148,15 @@
   },
   {
     "image": 26,
-    "report_asset": "original_26.png",
-    "replacement": false
+    "report_asset": "bs1_dose_response_combined.png",
+    "replacement": true,
+    "rendering": "Combined finite-time reconstruction; see caption and bs1_reconstruction/README.txt"
   },
   {
     "image": 27,
-    "report_asset": "original_27.png",
-    "replacement": false
+    "report_asset": "bs1_dose_response_combined.png",
+    "replacement": true,
+    "rendering": "Combined finite-time reconstruction; see caption and bs1_reconstruction/README.txt"
   },
   {
     "image": 28,

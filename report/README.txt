@@ -9,3 +9,5 @@ The four plain-text web equations were typeset as LaTeX. The IL-6 source express
 Figure numbering and original captions are retained as printed text. Figure 18 uses the revised sensitivity visualization, which shows small changes rather than exact dose independence; original claims remain as requested. Tables and citations are linked to the Google document in the article appendix; they are not embedded in the article itself.
 
 Equation revision: all dedicated equation images are now native numbered LaTeX. Cross-references use Equation X. The flattened RTC = Dc R TaKD expression was reconstructed as R_TC = D_c R T_a / K_D, consistent with the surrounding binding-affinity description; source HTML retains the exact ambiguous original. Inline temperature and rate subscripts are rendered in math mode.
+
+Numbering: all 18 figures use figure environments with caption and label; internal references use ref. The 36 equations use equation environments and labels. Run XeLaTeX twice to resolve references. Figure numbering is sequential after merging the original Figures 12 and 13; the previous-to-current mapping is saved in source/figure-numbering.json.

@@ -1,0 +1,110 @@
+[
+  {
+    "original_number": 1,
+    "label": "fig:original-00",
+    "file": "original_00.png",
+    "new_number": 1
+  },
+  {
+    "original_number": 2,
+    "label": "fig:original-01",
+    "file": "original_01.png",
+    "new_number": 2
+  },
+  {
+    "original_number": 3,
+    "label": "fig:original-05",
+    "file": "original_05.png",
+    "new_number": 3
+  },
+  {
+    "original_number": 4,
+    "label": "fig:original-06",
+    "file": "original_06.png",
+    "new_number": 4
+  },
+  {
+    "original_number": 5,
+    "label": "fig:diagram-architecture",
+    "file": "diagram_architecture.png",
+    "new_number": 5
+  },
+  {
+    "original_number": 6,
+    "label": "fig:glofitamab-mechanism-of-action",
+    "file": "glofitamab_mechanism_of_action.png",
+    "new_number": 6
+  },
+  {
+    "original_number": 7,
+    "label": "fig:original-20",
+    "file": "original_20.png",
+    "new_number": 7
+  },
+  {
+    "original_number": 8,
+    "label": "fig:original-21",
+    "file": "original_21.png",
+    "new_number": 8
+  },
+  {
+    "original_number": 9,
+    "label": "fig:original-23",
+    "file": "original_23.png",
+    "new_number": 9
+  },
+  {
+    "original_number": 10,
+    "label": "fig:original-24",
+    "file": "original_24.png",
+    "new_number": 10
+  },
+  {
+    "original_number": 11,
+    "label": "fig:original-25",
+    "file": "original_25.png",
+    "new_number": 11
+  },
+  {
+    "original_number": 12,
+    "label": "fig:bs1-dose-response-combined",
+    "file": "bs1_dose_response_combined.png",
+    "new_number": 12
+  },
+  {
+    "original_number": 14,
+    "label": "fig:original-28",
+    "file": "original_28.png",
+    "new_number": 13
+  },
+  {
+    "original_number": 15,
+    "label": "fig:fig1-first-dose-sweet-spot",
+    "file": "fig1_first_dose_sweet_spot.png",
+    "new_number": 14
+  },
+  {
+    "original_number": 16,
+    "label": "fig:fig2-current-vs-optimized",
+    "file": "fig2_current_vs_optimized.png",
+    "new_number": 15
+  },
+  {
+    "original_number": 17,
+    "label": "fig:fig3-ramp-comparison",
+    "file": "fig3_ramp_comparison.png",
+    "new_number": 16
+  },
+  {
+    "original_number": 18,
+    "label": "fig:fig4-fatigue-insensitivity",
+    "file": "fig4_fatigue_insensitivity.png",
+    "new_number": 17
+  },
+  {
+    "original_number": 19,
+    "label": "fig:plot10-dose-temperature",
+    "file": "plot10_dose_temperature.png",
+    "new_number": 18
+  }
+]

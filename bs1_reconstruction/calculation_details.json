@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "kon_6": 0.0001,
+    "koff_6": 0.00016,
+    "kon_8": 0.0001,
+    "koff_8": 0.01,
+    "kon_8_then_6": 0.01,
+    "koff_8_then_6": 0.00016,
+    "kon_6_then_8": 0.01,
+    "koff_6_then_8": 0.01
+  },
+  "source": "simulink_model/project4.slx: simulink/stateflow/chart_32.xml",
+  "receptors": [
+    50,
+    50
+  ],
+  "duration_seconds_assumed": 14400,
+  "points": 181,
+  "normalization": "ternary / maximum ternary across sweep",
+  "total_bound_definition": "b6 + b8 + 2*ternary (occupied receptors)",
+  "max_conservation_error": 1.5052137314341962e-09,
+  "minimum_state": 0.0,
+  "radau_bdf_max_absolute_difference": 2.1162804841878824e-10,
+  "peak_dose_on_grid": 60.72021956909884,
+  "peak_ternary": 42.636594956850736,
+  "status": "Reconstruction; original sweep script and settings unavailable."
+}
