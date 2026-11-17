@@ -1,0 +1,41 @@
+{
+  "bs1": {
+    "at_washout": [
+      7287.004200099697,
+      288573.06805822457,
+      307975.81871545763
+    ],
+    "at_four_hours": [
+      1317.9624067754391,
+      181812.93166057722,
+      313489.4174518383
+    ],
+    "solver_difference": 0.0005387726705521345
+  },
+  "glofitamab": {
+    "at_washout": [
+      87031.04706320705,
+      48579.882995498956,
+      67186.25914844105,
+      7944.587341373868,
+      3618.1512306093973
+    ],
+    "at_four_hours": [
+      73731.86111927152,
+      47670.08515559445,
+      7472.361959872815,
+      13053.672377557283,
+      8070.286702824379
+    ],
+    "solver_difference": 0.0004571154131554067
+  },
+  "provenance": {
+    "source": "Article-linked Google document, Tables 1 and 2",
+    "drug_nM": 100,
+    "bs1_dose_status": "inferred assumption; screenshot comparison required",
+    "glofitamab_B_syn_on": "8.3e-9 (#/cell)^-1 s^-1; CD20 cross-linking rate from Table 2, assigned to B_syn",
+    "glofitamab_B_syn_off": "1e-5 s^-1; inferred CD20 off-rate",
+    "washout": "clamped free bath changes 100 to 0 nM at 2 h; dissociated antibody removed",
+    "flux_panel": "individual net reaction flux = forward association minus reverse dissociation; not species dC/dt"
+  }
+}

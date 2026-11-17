@@ -1,0 +1,164 @@
+
+Parameter
+	Description
+	Best-Fit Value
+	Units
+	k_on,6R
+	Association rate to IL-6R (1st arm)
+	5.92 × 10⁻⁶
+	nM⁻¹s⁻¹
+	k_on,8R
+	Association rate to IL-8R (1st arm)
+	9.03 × 10⁻⁶
+	nM⁻¹s⁻¹
+	k_on,6R*
+	Association rate to IL-6R (2nd arm / cross-link)
+	8.11 × 10⁻⁸
+	(#/cell)⁻¹s⁻¹
+	k_on,8R*
+	Association rate to IL-8R (2nd arm / cross-link)
+	1.24 × 10⁻⁷
+	(#/cell)⁻¹s⁻¹
+	k_off,6R
+	Dissociation rate from IL-6R
+	5.61 × 10⁻⁵
+	s⁻¹
+	k_off,8R
+	Dissociation rate from IL-8R
+	6.38 × 10⁻⁵
+	s⁻¹
+	Table 1. Kinetic parameters for the BS1 bispecific antibody model, reproduced from Ray et al. (2024).
+
+
+During the binding phase (0–2 hours), the ternary complex (IL-6R-BS1-IL-8R, orange) saturated near 3.1 × 10⁵ complexes/cell, mirroring the IL-6R ceiling of 3.16 × 10⁵ #/cell, which confirmed IL-6R as the limiting receptor. The binary IL-8R complex (BS1-IL-8R, blue) accumulated steadily thereafter as excess antibodies engaged the more abundant IL-8R pool. The binary IL-6R complex (BS1-IL-6R, yellow) remained near zero throughout, as any IL-6R-bound antibody rapidly completed cross-linking before a stable binary species could accumulate. Upon washout at 2 hours, the binary IL-8R complex decayed while the ternary complex exhibited a brief upward inflection before plateauing — a direct manifestation of the avidity effect, wherein dissociating binary complexes release free receptors that tethered antibodies exploit to complete cross-linking. The result is sustained ternary occupancy in the complete absence of free drug, with implications for therapeutic activity beyond the pharmacokinetic window.
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 1 | Simulated binding dynamics of the BS1 bispecific antibody over 4 hours. BS1-IL-6R (yellow): binary IL-6R complex; BS1-IL-8R (blue): binary IL-8R complex; IL-6R-BS1-IL-8R (orange): ternary complex. Washout at t = 2 hours.
+
+
+Computational Advancement: Extension to Glofitimab (2:1 Format)
+The ODE framework was extended to Glofitimab, a 2:1 bispecific antibody with two obinutuzumab-derived CD20 arms and one CD3ε arm. This asymmetric architecture enables bivalent anchoring to tumor B-cells prior to T-cell recruitment — a mechanism absent from the 1:1 model and central to both Glofitimab's efficacy and its improved CRS profile. The model was expanded from three to five binding states: (1) Monovalent B-Cell (CD20-Ab); (2) Bivalent B-Cell Anchor (CD20-Ab-CD20); (3) Monovalent T-Cell (CD3-Ab); (4) Monovalent Synapse (CD20-Ab-CD3); and (5) Fully Locked Synapse (CD20-Ab-CD20-CD3). The Ray et al. unit conversion factor α = 8.3 × 10⁻⁷ nM/(#/cell) was applied throughout. Parameters are given in Table 2.
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+A key design choice is the asymmetric affinity: K_d,CD20 = 1.0 nM vs. K_d,CD3 = 30.0 nM. The weak CD3 affinity is intentional — it ensures T-cell engagement is restricted to contexts where the antibody is already anchored to a tumor cell, reducing systemic T-cell stimulation. This constraint is directly encoded in the model parameters and visible in the simulation output.
+
+
+Parameter
+	Description
+	Value
+	Units
+	Source / Justification
+	K_d,CD20
+	Equilibrium dissociation constant for CD20
+	1.0
+	nM
+	Obinutuzumab-derived high-affinity binding
+	k_on,CD20
+	Initial association rate to CD20 (B-cell)
+	1.0 × 10⁻⁵
+	nM⁻¹s⁻¹
+	Standard mAb association rate
+	k_off,CD20
+	Dissociation rate from monovalent CD20
+	1.0 × 10⁻⁵
+	s⁻¹
+	Calculated (K_d × k_on)
+	K_d,CD3
+	Equilibrium dissociation constant for CD3
+	30.0
+	nM
+	Engineered low-affinity to limit systemic CRS
+	k_on,CD3
+	Initial association rate to CD3 (T-cell)
+	1.0 × 10⁻⁵
+	nM⁻¹s⁻¹
+	Standard mAb association rate
+	k_off,CD3
+	Dissociation rate from monovalent CD3
+	3.0 × 10⁻⁴
+	s⁻¹
+	Calculated (K_d × k_on)
+	α
+	Volume-to-surface unit conversion factor
+	8.3 × 10⁻⁷
+	nM/(#/cell)
+	Ray et al. (2024)
+	k_on,CD20*
+	Cross-linking rate to 2nd CD20 (bivalent anchor)
+	8.3 × 10⁻⁹
+	(#/cell)⁻¹s⁻¹
+	k_on,CD20 × 1000 × α
+	k_off,CD20*
+	Dissociation rate from bivalent CD20 anchor
+	1.0 × 10⁻⁵
+	s⁻¹
+	Assumed similar to 1st arm
+	k_on,CD3_syn
+	Association rate for 2:1 immunological synapse
+	8.3 × 10⁻¹⁰
+	(#/cell)⁻¹s⁻¹
+	k_on,CD3 × 100 × α (restricted trans-binding)
+	k_off,CD3_syn
+	Dissociation rate from immunological synapse
+	3.0 × 10⁻⁴
+	s⁻¹
+	Assumed similar to monovalent CD3
+	B_total
+	Total CD20 receptors per B-cell
+	2.0 × 10⁵
+	#/cell
+	Standard lymphoma cell expression
+	T_total
+	Total CD3 receptors per T-cell
+	1.0 × 10⁵
+	#/cell
+	Standard peripheral T-cell expression
+	Table 2. Parameters for the Glofitimab 2:1 extended binding model.

@@ -6,7 +6,10 @@
 \usepackage{amsmath,amssymb,graphicx,mathtools}
 \usepackage[unicode,hidelinks]{hyperref}
 \usepackage{microtype}
-\usepackage{float,caption}
+\usepackage{float,caption,subcaption}
+\captionsetup[subfigure]{labelformat=simple}
+\renewcommand{\thesubfigure}{\thefigure\alph{subfigure}}
+\makeatletter\renewcommand{\p@subfigure}{}\makeatother
 \captionsetup{font=small,labelfont=bf}
 \setlength{\parindent}{0pt}
 \setlength{\emergencystretch}{3em}
@@ -596,7 +599,7 @@ Equation~\ref{eq:thermo-setpoint} defines the hypothalamic set-point ($T_{\mathr
 
 \subsection{Replication of BS1 Binding Model}
 
-During the binding phase (0–2 hours), the ternary complex (IL-6R-BS1-IL-8R, orange) saturated near 3.1 × 10\textsuperscript{5} complexes/cell, mirroring the IL-6R ceiling of 3.16 × 10\textsuperscript{5} \#/cell, which confirmed IL-6R as the limiting receptor. The binary IL-8R complex (BS1-IL-8R, blue) accumulated steadily thereafter as excess antibodies engaged the more abundant IL-8R pool. The binary IL-6R complex (BS1-IL-6R, yellow) remained near zero throughout, as any IL-6R-bound antibody rapidly completed cross-linking before a stable binary species could accumulate.
+In Figure~\ref{fig:bs1-concentration}, during the binding phase (0–2 hours), the ternary complex (IL-6R-BS1-IL-8R, orange) saturated near 3.1 × 10\textsuperscript{5} complexes/cell, mirroring the IL-6R ceiling of 3.16 × 10\textsuperscript{5} \#/cell, which confirmed IL-6R as the limiting receptor. The binary IL-8R complex (BS1-IL-8R, blue) accumulated steadily thereafter as excess antibodies engaged the more abundant IL-8R pool. The binary IL-6R complex (BS1-IL-6R, yellow) remained near zero throughout, as any IL-6R-bound antibody rapidly completed cross-linking before a stable binary species could accumulate.
 \par\medskip
 
 Upon washout at 2 hours, the binary IL-8R complex decayed while the ternary complex exhibited a brief upward inflection before plateauing — a direct manifestation of the avidity effect, wherein dissociating binary complexes release free receptors that tethered antibodies exploit to complete cross-linking. The result is sustained ternary occupancy in the complete absence of free drug, with implications for therapeutic activity beyond the pharmacokinetic window.
@@ -604,14 +607,25 @@ Upon washout at 2 hours, the binary IL-8R complex decayed while the ternary comp
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/original_25.png}
-\caption{Simulated binding dynamics of the BS1 bispecific antibody over 4 hours. BS1-IL-6R (yellow): binary IL-6R complex; BS1-IL-8R (blue): binary IL-8R complex; IL-6R-BS1-IL-8R (orange): ternary complex. Washout at t = 2 hours.}
+\begin{subfigure}[t]{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/bs1_concentration.png}
+\caption{Complex concentrations}
+\label{fig:bs1-concentration}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/bs1_flux.png}
+\caption{Net reaction fluxes}
+\label{fig:bs1-flux}
+\end{subfigure}
+\caption{BS1 binding dynamics with 100 nM free antibody before washout at 2 hours. Panel (a) shows complex amounts; panel (b) shows the four net binding-reaction fluxes. Kinetic parameters follow appendix Table 1; the BS1 dose is inferred from the original curves. Each net flux equals forward association minus reverse dissociation: positive values indicate forward binding, and negative values indicate net unbinding. Flux axes use a symmetric-log scale, linear between $-0.1$ and $0.1$ complexes/cell/s. Dashed vertical lines mark washout.}
 \label{fig:original-25}
 \end{figure}
 
 \subsection{Dose-dependent Binding Behavior}
 
-To extend the BS1 replication beyond the four-hour time-course shown in \emph{Figure~\ref{fig:original-25}}, we analyzed how initial BS1 concentration affected final receptor occupancy and ternary complex formation under a fixed receptor condition of IL-6R = 50 and IL-8R = 50. The simulations showed that total bound receptor increased monotonically with BS1 dose and approached saturation near the total available receptor pool, while ternary complex formation followed a bell-shaped dose-response, reaching a maximum at an intermediate concentration and declining at higher doses. This indicates that greater overall receptor occupancy does not necessarily correspond to greater productive bispecific binding. Instead, the linked two-receptor state is maximized within an intermediate dose window, while very high BS1 concentrations increasingly favor one-sided binary binding over ternary complex formation. These dose-response results complement the original BS1 time-course replication by showing that, in addition to avidity and post-washout persistence, concentration strongly shapes the balance between total target engagement and the functionally important bispecific complex. This is directly relevant to the broader Glofitamab framework, where the analogous functional objective is not simply more binding, but formation of the productive bridged state between target B-cells and effector T-cells.
+To extend the BS1 replication beyond the four-hour time-course shown in \emph{Figure~\ref{fig:bs1-concentration}}, we analyzed how initial BS1 concentration affected final receptor occupancy and ternary complex formation under a fixed receptor condition of IL-6R = 50 and IL-8R = 50. The simulations showed that total bound receptor increased monotonically with BS1 dose and approached saturation near the total available receptor pool, while ternary complex formation followed a bell-shaped dose-response, reaching a maximum at an intermediate concentration and declining at higher doses. This indicates that greater overall receptor occupancy does not necessarily correspond to greater productive bispecific binding. Instead, the linked two-receptor state is maximized within an intermediate dose window, while very high BS1 concentrations increasingly favor one-sided binary binding over ternary complex formation. These dose-response results complement the original BS1 time-course replication by showing that, in addition to avidity and post-washout persistence, concentration strongly shapes the balance between total target engagement and the functionally important bispecific complex. This is directly relevant to the broader Glofitamab framework, where the analogous functional objective is not simply more binding, but formation of the productive bridged state between target B-cells and effector T-cells.
 \par\medskip
 
 \begin{figure}[H]
@@ -623,7 +637,7 @@ To extend the BS1 replication beyond the four-hour time-course shown in \emph{Fi
 
 \subsection{Glofitamab Binding Dynamics (2:1 Architecture)}
 
-During the binding phase (0–2 hours), the high-affinity CD20 arms drove rapid B-cell coating: the monovalent B-cell complex (yellow) peaked near 8.7 × 10\textsuperscript{4}, and the bivalent anchor (blue) stabilized near 4.8 × 10\textsuperscript{4} with notably flat kinetics once formed. The monovalent T-cell complex (orange) also accumulated given the 100 nM dose exceeding the CD3 K\_d, but these represent transient solution-phase contacts rather than productive synaptic events. Accordingly, the fully locked synapse (purple) remained low throughout the infusion, rising only gradually — reflecting the geometric constraint of physically bridging two cell types and constituting the key safety mechanism limiting acute T-cell hyperactivation.
+In Figure~\ref{fig:glofitamab-concentration}, during the binding phase (0–2 hours), the high-affinity CD20 arms drove rapid B-cell coating: the monovalent B-cell complex (yellow) peaked near 8.7 × 10\textsuperscript{4}, and the bivalent anchor (blue) stabilized near 4.8 × 10\textsuperscript{4} with notably flat kinetics once formed. The monovalent T-cell complex (orange) also accumulated given the 100 nM dose exceeding the CD3 K\_d, but these represent transient solution-phase contacts rather than productive synaptic events. Accordingly, the fully locked synapse (purple) remained low throughout the infusion, rising only gradually — reflecting the geometric constraint of physically bridging two cell types and constituting the key safety mechanism limiting acute T-cell hyperactivation.
 \par\medskip
 
 Upon washout at 2 hours, the monovalent T-cell complex (orange) decayed sharply while the bivalent CD20 anchor (blue) remained almost entirely stable — a direct consequence of cooperative bivalent binding preventing full dissociation. Strikingly, both synapse species (green and purple) continued to increase post-washout: antibodies anchored to B-cells via both CD20 arms efficiently captured CD3 receptors freed by the decay of monovalent complexes, forming additional synapses without any free drug present. This post-washout synapse growth mirrors the avidity effect observed in the BS1 model and provides a mechanistic basis for Glofitamab’s sustained anti-tumor activity beyond its pharmacokinetic window.
@@ -631,8 +645,19 @@ Upon washout at 2 hours, the monovalent T-cell complex (orange) decayed sharply 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/original_28.png}
-\caption{Simulated binding dynamics and synapse formation for Glofitamab over 4 hours. Monovalent B-Cell (yellow); Bivalent B-Cell Anchor (blue); Monovalent T-Cell (orange); Monovalent Synapse (green); Fully Locked Synapse (purple). Washout at t = 2 hours.}
+\begin{subfigure}[t]{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/glofitamab_concentration.png}
+\caption{Complex concentrations}
+\label{fig:glofitamab-concentration}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/glofitamab_flux.png}
+\caption{Net reaction fluxes}
+\label{fig:glofitamab-flux}
+\end{subfigure}
+\caption{Glofitamab binding and synapse dynamics with 100 nM free antibody before washout at 2 hours. Panel (a) shows the five complex amounts; panel (b) shows seven net binding-reaction fluxes. Parameters follow appendix Table 2; CD20 recruitment uses the CD20 cross-linking rate. Each net flux equals forward association minus reverse dissociation: positive values indicate forward binding, and negative values indicate net unbinding. Flux axes use a symmetric-log scale, linear between $-0.1$ and $0.1$ complexes/cell/s. Dashed vertical lines mark washout.}
 \label{fig:original-28}
 \end{figure}
 

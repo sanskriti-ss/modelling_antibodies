@@ -1,0 +1,62 @@
+{
+  "bs1": [
+    {
+      "series": 0,
+      "sample_count": 201,
+      "rmse_complexes_per_cell": 182.77734218112886,
+      "rmse_pixels": 0.4039379262202948,
+      "max_absolute_error_complexes_per_cell": 337.1117012019581
+    },
+    {
+      "series": 1,
+      "sample_count": 201,
+      "rmse_complexes_per_cell": 636.1010370647792,
+      "rmse_pixels": 1.405783291913162,
+      "max_absolute_error_complexes_per_cell": 2286.1311011514335
+    },
+    {
+      "series": 2,
+      "sample_count": 201,
+      "rmse_complexes_per_cell": 1188.7006619414706,
+      "rmse_pixels": 2.62702846289065,
+      "max_absolute_error_complexes_per_cell": 8479.824410355839
+    }
+  ],
+  "glofitamab": [
+    {
+      "series": 0,
+      "sample_count": 207,
+      "rmse_complexes_per_cell": 136.91463135815337,
+      "rmse_pixels": 1.074779856161504,
+      "max_absolute_error_complexes_per_cell": 696.3784078115277
+    },
+    {
+      "series": 1,
+      "sample_count": 207,
+      "rmse_complexes_per_cell": 105.12697137890655,
+      "rmse_pixels": 0.8252467253244165,
+      "max_absolute_error_complexes_per_cell": 399.3784989463884
+    },
+    {
+      "series": 2,
+      "sample_count": 205,
+      "rmse_complexes_per_cell": 91.56048171390653,
+      "rmse_pixels": 0.7187497814541662,
+      "max_absolute_error_complexes_per_cell": 372.4260044235434
+    },
+    {
+      "series": 3,
+      "sample_count": 207,
+      "rmse_complexes_per_cell": 74.96213092895046,
+      "rmse_pixels": 0.5884527277922611,
+      "max_absolute_error_complexes_per_cell": 187.80367870731743
+    },
+    {
+      "series": 4,
+      "sample_count": 207,
+      "rmse_complexes_per_cell": 70.93734454826702,
+      "rmse_pixels": 0.5568581547038961,
+      "max_absolute_error_complexes_per_cell": 131.46698630971605
+    }
+  ]
+}

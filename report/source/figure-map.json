@@ -143,8 +143,12 @@
   },
   {
     "image": 25,
-    "report_asset": "original_25.png",
-    "replacement": false
+    "report_asset": [
+      "bs1_concentration.png",
+      "bs1_flux.png"
+    ],
+    "replacement": true,
+    "rendering": "Local mass-action reconstruction; native LaTeX concentration/flux subfigures"
   },
   {
     "image": 26,
@@ -160,8 +164,12 @@
   },
   {
     "image": 28,
-    "report_asset": "original_28.png",
-    "replacement": false
+    "report_asset": [
+      "glofitamab_concentration.png",
+      "glofitamab_flux.png"
+    ],
+    "replacement": true,
+    "rendering": "Local mass-action reconstruction; native LaTeX concentration/flux subfigures"
   },
   {
     "image": 29,
