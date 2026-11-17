@@ -448,17 +448,17 @@ inhibition is absent. α_H measures how strongly hypothalamic inflammation suppr
 
 
                                                        12
-k_F,in is the rate at which effective nutritional input supports maintenance or gain of fat mass. k_L,in is the
-corresponding rate for lean mass maintenance or synthesis. k_F,0 is the baseline fat turnover or fat loss rate
-present even without IL-6 driven cachexia. k_L,0 is the analogous baseline lean mass turnover rate. k_F,IL6
-is the strength of direct IL-6 driven fat loss, mainly through lipolysis. k_L,IL6 is the strength of direct IL-6
-driven lean mass loss, mainly through proteolysis and catabolic signaling. K_F and K_L are half saturation
+kF,in is the rate at which effective nutritional input supports maintenance or gain of fat mass. kL,in is the
+corresponding rate for lean mass maintenance or synthesis. kF,0 is the baseline fat turnover or fat loss rate
+present even without IL-6 driven cachexia. kL,0 is the analogous baseline lean mass turnover rate. kF,IL6
+is the strength of direct IL-6 driven fat loss, mainly through lipolysis. kL,IL6 is the strength of direct IL-6
+driven lean mass loss, mainly through proteolysis and catabolic signaling. KF and KL are half saturation
 constants, meaning the IL-6 concentration scale at which the direct IL-6 effects on fat and lean tissue are
-about half maximal. k_FB is the extra fat loss coefficient caused by browning/thermogenesis. k_LM is the
-extra lean mass loss coefficient caused by the muscle catabolic state M. a_B, a_M, and a_H are activation rate
-constants describing how quickly IL-6 builds up the browning state B, the muscle catabolic state M, and the
-hypothalamic state H, respectively. K_B, K_M, and K_H are the corresponding half saturation constants for
-those activation processes. Finally, d_B, d_M, and d_H are decay or relaxation rate constants that describe
+about half maximal. kF B is the extra fat loss coefficient caused by browning/thermogenesis. kLM is the
+extra lean mass loss coefficient caused by the muscle catabolic state M . aB , aM , and aH are activation rate
+constants describing how quickly IL-6 builds up the browning state B, the muscle catabolic state M , and
+the hypothalamic state H, respectively. KB , KM , and KH are the corresponding half saturation constants
+for those activation processes. Finally, dB , dM , and dH are decay or relaxation rate constants that describe
 how quickly those states resolve when IL-6 falls.
 This formulation also lets the model reflect how CRS associated IL-6 should mainly influence the fast hy-
 pothalamic state H, capturing short term anorexia and sickness behavior, whereas longer term progressive
